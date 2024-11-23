@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+
+    <main>
+        <div class="nav">
+            <div>
+                <img src="./images/logo.svg" >
+            </div>
+            <div class="score-box">
+                <p>score</p>
+                <span id="score">0</span>
+            </div>
+        </div>
+    
+    
+        <div class="triangel" id="triangel" >
+            <img class="back" src="./images/bg-triangle.svg">
+            <div class="boxs">
+                <div class="paper" onclick="play(2,'./images/icon-paper.svg','10px solid hsl(230, 89%, 65%)')">
+                    <img src="./images/icon-paper.svg">
+                </div>
+                <div class="rock" onclick="play(1,'./images/icon-rock.svg','10px solid hsl(349, 70%, 56%)')">
+                    <img src="./images/icon-rock.svg">
+                </div>
+                <div class="Scissors" onclick="play(3,'./images/icon-scissors.svg','10px solid hsl(40, 84%, 53%)')">
+                    <img src="./images/icon-scissors.svg">
+                </div>
+            </div>
+        </div>
+        <div class="section2" id="play-sc">
+            <div class="row-3">
+                <div class="col-2-img">
+                    <p>You Picked</p>
+                    <div class="back" id="youback">
+                        <img id="you" src="./images/icon-rock.svg">
+                    </div>
+                </div>
+                <div class="resuits">
+                    <h2 id="resuit">you win</h2>
+                    <button onclick="playgain()">Play Again</button>
+                </div>
+                <div class="col-2-img">
+                    <p>The House Picked</p>
+                    <div class="back" id="pcback">
+                        <img id="pc" src="./images/icon-paper.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
